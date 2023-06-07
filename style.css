@@ -48,6 +48,7 @@ body {
   padding: 80px 24px 0 24px;
   line-height: 52px;
 }
+
 .bigger-text-2 {
   display: flex;
   align-items: center;
@@ -70,6 +71,7 @@ body {
   height: 76px;
   color: #344563;
 }
+
 .smaller-text {
   font-weight: 400;
   font-size: 16px;
@@ -152,6 +154,7 @@ body {
   color: #172b4d;
   margin-top: 12px;
 }
+
 .nav-list {
   margin: 20px 12px 20px 0;
 }
