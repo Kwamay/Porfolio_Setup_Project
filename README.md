@@ -145,7 +145,7 @@ If you like this project kindly give me stars
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank God for given me the strength and Microverse 
+I would like to thank the Almighty God for given me the strength and Microverse 
 for providing content for this project. 
 
 
