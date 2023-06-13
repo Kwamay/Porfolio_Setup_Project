@@ -359,6 +359,7 @@ button:active {
 .drop-down:active {
   background-color: #7a869a;
 }
+
 .contact-page {
   background-image: url(images/2nd-phase/contact-bg.png);
   background-repeat: no-repeat;
@@ -380,7 +381,7 @@ button:active {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   margin: 103px 50px 0;
 }
 
@@ -435,10 +436,11 @@ textarea {
   padding-left: 16px;
   padding-top: 15px;
 }
+
 .contact-button {
   padding: 12px 16px;
   color: #6070ff;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
@@ -448,8 +450,5 @@ textarea {
   font-weight: 500;
   cursor: pointer;
   position: relative;
-  left: -6.2rem;
- }
-
-
-
+  left:  -6.2rem;
+}
