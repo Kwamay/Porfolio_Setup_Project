@@ -384,4 +384,57 @@ button:active {
   margin: 103px 50px 0;
 }
 
+.contact-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  height: 137px;
+  width: 327px;
+  margin-top: 12px 24px 52px;
+  color: #ebebff;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+input {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.form-items input {
+  border: 1px solid #cfd8dc;
+  padding-left: 16px;
+  margin-left: 24px;
+}
+
+textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.form-items textarea {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding-left: 16px;
+  padding-top: 15px;
+}
+
+
 
