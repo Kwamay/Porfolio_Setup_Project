@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  height: 718px;
+  width: 375px;
 }
 
 .container {
@@ -9,7 +17,8 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 375px;
-  height: 48 px;
+  height: 48px;
+  margin-top: 12px;
 }
 
 .logo {
@@ -20,8 +29,9 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  white-space: nowrap;
   line-height: 20px;
-  margin-left: -30px;
+  margin-left: 24px;
   padding-right: 200px;
   flex-direction: row-reverse;
   text-decoration: none;
@@ -47,6 +57,7 @@ body {
   color: #172b4d;
   padding: 80px 24px 0 24px;
   line-height: 52px;
+  margin-top: 100px;
 }
 
 .bigger-text-2 {
@@ -80,6 +91,7 @@ body {
   height: 146px;
   color: #344563;
   padding: 8px 24px 0 24px;
+  margin-top: 34px;
 }
 
 .second-container {
@@ -88,9 +100,20 @@ body {
   height: 587.15px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: -30px;
   min-height: calc(100vh - 599px);
   border-bottom-left-radius: 90px;
   background-color: #fff;
+}
+
+.first-connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 24px;
+  margin-top: 30px;
 }
 
 .connect {
@@ -142,13 +165,16 @@ body {
 }
 
 .second-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 114px 24px 0;
 }
 
 .second-page {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; */
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px 16px 28px;
@@ -162,6 +188,10 @@ body {
   margin-top: 12px;
 }
 
+.big-image {
+  left: -30px;
+}
+
 .nav-list {
   margin: 20px 12px 20px 0;
 }
@@ -171,7 +201,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   position: relative;
-  left: -3.5rem;
+  left: -1rem;
 }
 
 .canopy {
@@ -192,7 +222,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   line-height: 16px;
-  left: 2rem;
+  left: -3rem;
 }
 
 .year {
@@ -202,7 +232,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   line-height: 16px;
-  left: 4rem;
+  left: -1rem;
 }
 
 .small-text-2 {
@@ -222,7 +252,7 @@ body {
   list-style-type: none;
   color: #6070ff;
   position: relative;
-  left: -2.5rem;
+  left: -0.2rem;
   margin-top: 12px;
 }
 
@@ -245,6 +275,7 @@ body {
   font-weight: 500;
   cursor: pointer;
   padding: 12px;
+  margin-top: 20px;
 }
 
 .about-bigger-text {
@@ -290,6 +321,7 @@ body {
   cursor: pointer;
   padding: 12px;
   margin-left: 24px;
+  margin-top: 20px;
   margin-bottom: 48px;
 }
 
@@ -358,4 +390,103 @@ button:active {
 
 .drop-down:active {
   background-color: #7a869a;
+}
+
+.contact-page {
+  background-color: #6070ff;
+  width: 375px;
+  height: 779px;
+  border-top-left-radius: 80px;
+  margin-top: 176.85px;
+}
+
+.contact-bg {
+  background-image: url(images/2nd-phase/contact-mob-bg.png);
+  background-repeat: no-repeat;
+  background-size: 265px 710px;
+  background-position-x: 130px;
+  background-position-y: 15px;
+}
+
+.contact-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #fff;
+  margin: 103px 50px 0;
+}
+
+.contact-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  height: 137px;
+  text-align: center;
+  width: 327px;
+  margin: 12px 24px 52px;
+  color: #ebebff;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+input {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.form-items input {
+  border: 1px solid #cfd8dc;
+  padding-left: 16px;
+  margin-left: 24px;
+}
+
+textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.form-items textarea {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding-left: 16px;
+  padding-top: 15px;
+}
+
+.contact-button {
+  padding: 12px 16px;
+  color: #6070ff;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  left: -6.2rem;
 }
