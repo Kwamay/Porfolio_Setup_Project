@@ -29,11 +29,19 @@
           />
         </a>
       </nav>
+      <ul class="header-content">
+        <!-- <li class="head-words">My Logo</li> -->
+        <li class="head-words">Portfolio</li>
+        <li class="head-words">About</li>
+        <li class="head-words">Contact</li>
+      </ul>
     </header>
     <section class="second-container">
-        <div class="header">
-        <h1 class="bigger-text">I'm Kwamay. Glad to see you!</h1>
-      </div>
+      <h1 class="bigger-text">
+        I'm Kwamay. <br />
+        Glad to see you!
+      </h1>
+
       <div>
         <p class="smaller-text">
           I'am a software developer! I can help you build a product, feature or
@@ -80,7 +88,7 @@
           /></a>
         </li>
       </ul>
-      </section>
+    </section>
     <section class="mobile-version">
       <div class="second-phase">
         <div class="second-page">
@@ -91,26 +99,33 @@
             height="220"
             width="295"
           />
+          <img
+            class="image"
+            src="images/dektop-images/nature.png"
+            alt="Nature"
+          />
 
-          <h3 class="bar-word">Tonic</h3>
-          <nav class="nav-list">
-            <ul class="nav-items">
-              <li class="canopy">CANOPY</li>
+          <div>
+            <h3 class="bar-word">Tonic</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">CANOPY</li>
 
-              <li class="back-end">BACK END DEV</li>
-              <li class="year">2015</li>
+                <li class="back-end">BACK END DEV</li>
+                <li class="year">2015</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A daily selection of private personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="language">
+              <li class="language-type">HTML</li>
+              <li class="language-type">CSS</li>
+              <li class="language-type">JavaScript</li>
             </ul>
-          </nav>
-          <p class="text">
-            A daily selection of private personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li class="language-type">HTML</li>
-            <li class="language-type">CSS</li>
-            <li class="language-type">JavaScript</li>
-          </ul>
-          <button class="project-button">See project</button>
+            <button class="project-button">See project</button>
+          </div>
         </div>
       </div>
       <div class="second-phase">
@@ -209,7 +224,7 @@
     </section>
 
     <section class="about-page">
-      <div class="about">
+      <div>
         <h2 class="about-bigger-text">About Myself</h2>
         <p class="about-text">
           Hello I'am a software developer! I can help you build a product,
@@ -299,50 +314,48 @@
       </ul>
     </section>
     <section class="contact-page">
-      <div class="contact-bg">
-      <div class="contact-page-content">
-        <h2 class="contact-me">Contact me</h2>
-        <p class="contact-text">
-          If you have an application you are intrested in developing, a feature
-          that you need built or a project that needs coding. I'd love to help
-          with it!
-        </p>
-        <form action="https://formspree.io/f/xeqwyoye" method="post">
-          <div class="form-items">
-            <label for="name">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="User name"
-                maxlength="30"
-                required
-              />
-            </label>
-            <label for="mail">
-              <input
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="User email Address"
-                required
-              />
-            </label>
-            <textarea
-              name="user_msg"
-              id="message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              name="message"
-              placeholder="Write your message here"
-              required
-            ></textarea>
-            <button type="submit" class="contact-button">Get in Touch</button>
-          </div>
-        </form>
-      </div>
-    </div>
+      <h2 class="contact-me">Contact me</h2>
+      <p class="contact-text">
+        If you have an application you are intrested in developing, a feature
+        that you need built or a project that needs coding. I'd love to help
+        with it!
+      </p>
+      <form
+        action="https://formspree.io/f/xeqwyoye"
+        class="form-items"
+        method="post"
+      >
+        <label for="name">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="User name"
+            maxlength="30"
+            required
+          />
+        </label>
+        <label for="mail">
+          <input
+            type="email"
+            id="mail"
+            name="email"
+            placeholder="User email Address"
+            required
+          />
+        </label>
+        <textarea
+          name="user_msg"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          name="message"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+        <button type="submit" class="contact-button">Get in Touch</button>
+      </form>
     </section>
   </body>
 </html>
