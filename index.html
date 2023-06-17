@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="desktop.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
@@ -17,10 +18,10 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="container">
+    <header class="header">
       <a href="#" class="logo"> My Logo </a>
-      <nav class="button">
-        <a href="#">
+      <nav class="logo-button">
+        <a class="mobile" href="#">
           <img
             src="images/icon_image/Union.png"
             alt="buttom"
@@ -29,88 +30,115 @@
           />
         </a>
       </nav>
+      <div class="desktop">
+        <ul class="header-content">
+          <li class="head-words">Portfolio</li>
+          <li class="head-words">About</li>
+          <li class="head-words">Contact</li>
+        </ul>
+      </div>
     </header>
     <section class="second-container">
-        <div class="header">
-        <h1 class="bigger-text">I'm Kwamay. Glad to see you!</h1>
-      </div>
-      <div>
-        <p class="smaller-text">
-          I'am a software developer! I can help you build a product, feature or
-          website. Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hesitate to contact
-          me.
-        </p>
-      </div>
-      <h3 class="first-connect">LET'S CONNECT</h3>
+      <div class="container">
+        <div class="container-1">
+          <h1 class="bigger-text">
+            I'm Kwamay. <br />
+            Glad to see you!
+          </h1>
+          <div>
+            <p class="smaller-text">
+              I'am a software developer! I can help you build a product, feature or
+              website. Look through some of my work and experience! If you like what
+              you see and have a project you need coded, don't hesitate to contact
+              me.
+            </p>
+          </div>
+          <h3 class="first-connect">LET'S CONNECT</h3>
 
-      <ul class="social">
-        <li>
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/twitter.png"
-              alt="twitter"
-              class="twitter"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/linkedin.png"
-              alt="linkedin"
-              class="linkedin"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img src="images/icon_image/medium.png" alt="medium" class="medium"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img src="images/icon_image/github.png" alt="Github" class="github"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/angelist.png"
-              alt="Hand"
-              class="angelist"
-          /></a>
-        </li>
-      </ul>
-      </section>
-    <section class="mobile-version">
+          <ul class="first-social">
+            <li>
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/twitter.png"
+                  alt="twitter"
+                  class="twitter"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/linkedin.png"
+                  alt="linkedin"
+                  class="linkedin"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img src="images/icon_image/medium.png" alt="medium" class="medium"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img src="images/icon_image/github.png" alt="Github" class="github"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/angelist.png"
+                  alt="Hand"
+                  class="angelist"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="mobile-version container">
       <div class="second-phase">
         <div class="second-page">
           <img
             src="images/2nd-phase/pic_on_screen.png"
             alt="image"
-            class="big-image"
+            class="mobile"
             height="220"
             width="295"
           />
-
-          <h3 class="bar-word">Tonic</h3>
-          <nav class="nav-list">
-            <ul class="nav-items">
-              <li class="canopy">CANOPY</li>
-
-              <li class="back-end">BACK END DEV</li>
-              <li class="year">2015</li>
-            </ul>
-          </nav>
-          <p class="text">
-            A daily selection of private personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li class="language-type">HTML</li>
-            <li class="language-type">CSS</li>
-            <li class="language-type">JavaScript</li>
-          </ul>
-          <button class="project-button">See project</button>
+          <img
+            class="desktop item-1 auto-size"
+            src="images/dektop-images/nature.png"
+            alt="Nature"
+          />
+          <div class="item-2">
+            <h3 class="bar-word">Tonic</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">CANOPY</li>
+                <li class="back-end">BACK END DEV</li>
+                <li class="year">2015</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A daily selection of private personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <div class="mobile">
+              <ul class="language">
+                <li class="language-type">HTML</li>
+                <li class="language-type">CSS</li>
+                <li class="language-type">JavaScript</li>
+              </ul>
+            </div>
+            <div class="desktop">
+              <ul class="desktop-lang">
+                <li class="desktop-lang-type">html</li>
+                <li class="desktop-lang-type">Ruby on rails</li>
+                <li class="desktop-lang-type">css</li>
+                <li class="desktop-lang-type">javaScript</li>
+              </ul>
+            </div>
+            <button class="project-button">See project</button>
+          </div>
         </div>
       </div>
       <div class="second-phase">
@@ -118,30 +146,61 @@
           <img
             src="images/2nd-phase/Avail.png"
             alt="image"
-            class="big-image"
+            class="mobile"
             height="220"
             width="295"
           />
-
-          <h3 class="bar-word">Multi-Post Stories</h3>
-          <nav class="nav-list">
-            <ul class="nav-items">
-              <li class="canopy">CANOPY</li>
-
-              <li class="back-end">BACK END DEV</li>
-              <li class="year">2015</li>
+          <img
+            class="desktop item-2 auto-size"
+            src="images/dektop-images/art.png"
+            alt="image"
+          />
+          <div class="mobile">
+            <h3 class="bar-word">Multi-Post Stories</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">CANOPY</li>
+                <li class="back-end">BACK END DEV</li>
+                <li class="year">2015</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A daily selection of private personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="language">
+              <li class="language-type">HTML</li>
+              <li class="language-type">CSS</li>
+              <li class="language-type">JavaScript</li>
             </ul>
-          </nav>
-          <p class="text">
-            A daily selection of private personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li class="language-type">HTML</li>
-            <li class="language-type">CSS</li>
-            <li class="language-type">JavaScript</li>
-          </ul>
-          <button class="project-button">See project</button>
+            <button class="project-button">See project</button>
+          </div>
+          <div class="desktop">
+            <div class="item-1">
+              <h3 class="bar-word">Multi-Post Stories</h3>
+              <nav class="nav-list">
+                <ul class="nav-items">
+                  <li class="canopy">FACEBOOK</li>
+                  <li class="back-end">Full Stack Dev</li>
+                  <li class="year">2015</li>
+                </ul>
+              </nav>
+              <p class="text">
+                Experimental content creation feature that allows users to add
+                to an existing story over the course of a day without spamming
+                their friends.
+              </p>
+            </div>
+            <div class="desktop">
+              <ul class="desktop-lang">
+                <li class="desktop-lang-type">html</li>
+                <li class="desktop-lang-type">Ruby on rails</li>
+                <li class="desktop-lang-type">css</li>
+                <li class="desktop-lang-type">javaScript</li>
+              </ul>
+            </div>
+            <button class="project-button">See project</button>
+          </div>
         </div>
       </div>
       <div class="second-phase">
@@ -149,30 +208,61 @@
           <img
             src="images/2nd-phase/gym.png"
             alt="image"
-            class="big-image"
+            class="mobile"
             height="220"
             width="295"
+          /><img
+            class="desktop item-1 auto-size"
+            src="images/dektop-images/display-pic.png"
+            alt="image"
           />
-
-          <h3 class="bar-word">Tonic</h3>
-          <nav class="nav-list">
-            <ul class="nav-items">
-              <li class="canopy">CANOPY</li>
-
-              <li class="back-end">BACK END DEV</li>
-              <li class="year">2015</li>
+          <div class="mobile">
+            <h3 class="bar-word">Tonic</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">CANOPY</li>
+                <li class="back-end">BACK END DEV</li>
+                <li class="year">2015</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A daily selection of private personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="language">
+              <li class="language-type">HTML</li>
+              <li class="language-type">CSS</li>
+              <li class="language-type">JavaScript</li>
             </ul>
-          </nav>
-          <p class="text">
-            A daily selection of private personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li class="language-type">HTML</li>
-            <li class="language-type">CSS</li>
-            <li class="language-type">JavaScript</li>
-          </ul>
-          <button class="project-button">See project</button>
+            <button class="project-button">See project</button>
+          </div>
+          <div class="desktop">
+            <div class="item-2">
+              <h3 class="bar-word">Facebook 360</h3>
+              <nav class="nav-list">
+                <ul class="nav-items">
+                  <li class="canopy">Facebook</li>
+
+                  <li class="back-end">Full Stack DEV</li>
+                  <li class="year">2015</li>
+                </ul>
+              </nav>
+              <p class="text">
+                Exploring the future of media in Facebook's first Virtual
+                Reality app; a place to discover and enjoy 360 photos and videos
+                on Gear VR.
+              </p>
+              <div class="desktop">
+                <ul class="desktop-lang">
+                  <li class="desktop-lang-type">html</li>
+                  <li class="desktop-lang-type">Ruby on rails</li>
+                  <li class="desktop-lang-type">css</li>
+                  <li class="desktop-lang-type">javaScript</li>
+                </ul>
+              </div>
+              <button class="project-button">See project</button>
+            </div>
+          </div>
         </div>
       </div>
       <div class="second-phase">
@@ -180,169 +270,214 @@
           <img
             src="images/2nd-phase/art.png"
             alt="image"
-            class="big-image"
+            class="mobile"
             height="220"
             width="295"
           />
-
-          <h3 class="bar-word">Multi-Post Stories</h3>
-          <nav class="nav-list">
-            <ul class="nav-items">
-              <li class="canopy">CANOPY</li>
-
-              <li class="back-end">BACK END DEV</li>
-              <li class="year">2015</li>
+          <img
+            class="desktop item-2 auto-size"
+            src="images/dektop-images/avail.png"
+            alt="image"
+          />
+          <div class="mobile">
+            <h3 class="bar-word">Multi-Post Stories</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">CANOPY</li>
+                <li class="back-end">BACK END DEV</li>
+                <li class="year">2015</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A daily selection of private personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="language">
+              <li class="language-type">HTML</li>
+              <li class="language-type">CSS</li>
+              <li class="language-type">JavaScript</li>
             </ul>
-          </nav>
-          <p class="text">
-            A daily selection of private personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="language">
-            <li class="language-type">HTML</li>
-            <li class="language-type">CSS</li>
-            <li class="language-type">JavaScript</li>
-          </ul>
-          <button class="project-button">See project</button>
+            <button class="project-button">See project</button>
+          </div>
+          <div class="desktop">
+          <div class="item-1">
+            <h3 class="bar-word">Uber Navigation</h3>
+            <nav class="nav-list">
+              <ul class="nav-items">
+                <li class="canopy">Uber</li>
+                <li class="back-end">Lead Developer</li>
+                <li class="year">2018</li>
+              </ul>
+            </nav>
+            <p class="text">
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car.
+            </p>
+            <div class="desktop">
+              <ul class="desktop-lang">
+                <li class="desktop-lang-type">html</li>
+                <li class="desktop-lang-type">Ruby on rails</li>
+                <li class="desktop-lang-type">css</li>
+                <li class="desktop-lang-type">javaScript</li>
+              </ul>
+            </div>
+          </div>
+            <button class="project-button">See project</button>
+          </div>
         </div>
       </div>
     </section>
-
     <section class="about-page">
-      <div class="about">
-        <h2 class="about-bigger-text">About Myself</h2>
-        <p class="about-text">
-          Hello I'am a software developer! I can help you build a product,
-          feature or website. Look through some of my work and experience! If
-          you like what you see and have a project you need coded, don't
-          hesitate to contact me.
-        </p>
+      <div class="container about-page-inner">
+        <div class="about-half-sect">
+          <h2 class="about-bigger-text">About Myself</h2>
+          <p class="about-text">
+            Hello I'am a software developer! I can help you build a product,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don't
+            hesitate to contact me.
+          </p>
+          <h3 class="connect">LET'S CONNECT</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/github.png"
+                  alt="Github"
+                  class="github"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/linkedin.png"
+                  alt="linkedin"
+                  class="linkedin"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/angelist.png"
+                  alt="Hand"
+                  class="angelist"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img
+                  src="images/icon_image/twitter.png"
+                  alt="twitter"
+                  class="twitter"
+              /></a>
+            </li>
+            <li class="icons-li">
+              <a href="#" class="icons-link">
+                <img src="images/icon_image/medium.png" alt="Hand" class="medium"
+              /></a>
+            </li>
+          </ul>
+          <button class="resume-button">Get my resume</button>
+        </div>
+        <div class="about-half-sect">
+          <ul class="about-list">
+            <li class="tab-item tab-item-open">
+              <div class="language-title">
+                <span class="language-text">Languages </span>
+                <button class="drop-down"><img src="images/chevron.png" /></button>
+                <!-- <i class="fas fast ">&#xf078;</i> -->
+              </div>
+              <ul class="tab-langs">
+                <li class="frame-lang">
+                  <img src="images/2nd-phase/js.png" height="48" width="48" /><label
+                    class="tab-text"
+                    >JavaScript</label
+                  >
+                </li>
+                <li class="frame-lang">
+                  <img
+                    src="images/2nd-phase/html.png"
+                    height="48"
+                    width="48"
+                  /><span class="tab-text">HTML</span>
+                </li>
+                <li class="frame-lang">
+                  <img src="images/2nd-phase/css.png" height="48" width="48" /><span
+                    class="tab-text"
+                    >CSS</span
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="tab-item">
+              <div class="language-title">
+                <span class="language-text">Frameworks</span>
+                <button class="drop-down">
+                  <img src="images/icon_image/arrowright.png" />
+                </button>
+                <!-- <i class="fas fast ">&#xf078;</i> -->
+              </div>
+              <ul class="tab-langs hidden"></ul>
+            </li>
+            <li class="tab-item">
+              <div class="language-title">
+                <span class="language-text">Skills</span>
+                <button class="drop-down">
+                  <img src="images/icon_image/arrowright.png" />
+                </button>
+                <!-- <i class="fas fast ">&#xf078;</i> -->
+              </div>
+              <ul class="tab-langs hidden"></ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <h3 class="connect">LET'S CONNECT</h3>
-
-      <ul class="social">
-        <li>
-          <a href="#" class="icons-link">
-            <img src="images/icon_image/github.png" alt="Github" class="github"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/linkedin.png"
-              alt="linkedin"
-              class="linkedin"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/angelist.png"
-              alt="Hand"
-              class="angelist"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img
-              src="images/icon_image/twitter.png"
-              alt="twitter"
-              class="twitter"
-          /></a>
-        </li>
-        <li class="icons-li">
-          <a href="#" class="icons-link">
-            <img src="images/icon_image/medium.png" alt="Hand" class="medium"
-          /></a>
-        </li>
-      </ul>
-
-      <button class="resume-button">Get my resume</button>
-
-      <ul class="about-list">
-        <li class="tab-item">
-          <div class="language-title">
-            <span class="language-text">Languages </span>
-            <button class="drop-down"><img src="images/chevron.png" /></button>
-            <!-- <i class="fas fast ">&#xf078;</i> -->
-          </div>
-          <div class="tab-langs">
-            <li class="frame-lang">
-              <img src="images/2nd-phase/js.png" height="48" width="48" /><span
-                class="tab-text"
-                >JavaScript</span
-              >
-            </li>
-            <li class="frame-lang">
-              <img
-                src="images/2nd-phase/html.png"
-                height="48"
-                width="48"
-              /><span class="tab-text">HTML</span>
-            </li>
-            <li class="frame-lang">
-              <img src="images/2nd-phase/css.png" height="48" width="48" /><span
-                class="tab-text"
-                >CSS</span
-              >
-            </li>
-          </div>
-        </li>
-        <li class="language-title unopened-title">
-          <span class="language-words">Frameworks</span
-          ><span class="material-symbols-outlined"> chevron_right </span>
-        </li>
-        <li class="language-title unopened-title">
-          <span class="language-words">Skills</span>
-          <span class="material-symbols-outlined"> chevron_right </span>
-        </li>
-      </ul>
     </section>
-    <section class="contact-page">
-      <div class="contact-bg">
-      <div class="contact-page-content">
+    <section class="contact-container">
+      <div class="contact-page">
         <h2 class="contact-me">Contact me</h2>
         <p class="contact-text">
           If you have an application you are intrested in developing, a feature
           that you need built or a project that needs coding. I'd love to help
           with it!
         </p>
-        <form action="https://formspree.io/f/xeqwyoye" method="post">
-          <div class="form-items">
-            <label for="name">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="User name"
-                maxlength="30"
-                required
-              />
-            </label>
-            <label for="mail">
-              <input
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="User email Address"
-                required
-              />
-            </label>
-            <textarea
-              name="user_msg"
-              id="message"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              name="message"
-              placeholder="Write your message here"
+        <form
+          action="https://formspree.io/f/xeqwyoye"
+          class="form-items"
+          method="post"
+        >
+          <label for="name">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="User name"
+              maxlength="30"
               required
-            ></textarea>
-            <button type="submit" class="contact-button">Get in Touch</button>
-          </div>
+            />
+          </label>
+          <label for="mail">
+            <input
+              type="email"
+              id="mail"
+              name="email"
+              placeholder="User email Address"
+              required
+            />
+          </label>
+          <textarea
+            name="user_msg"
+            id="message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            name="message"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <button type="submit" class="contact-button">Get in Touch</button>
         </form>
       </div>
-    </div>
     </section>
   </body>
 </html>
