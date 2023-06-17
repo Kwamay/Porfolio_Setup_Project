@@ -417,7 +417,7 @@
     z-index: 0;
     background: #ebebff;
     border-radius: 8px;
-    transition: all .5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
 
   .mobile {
