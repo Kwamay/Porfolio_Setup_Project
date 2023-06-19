@@ -68,7 +68,7 @@ Added style.css file
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://kwamay.github.io/Porfolio_Setup_Project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
