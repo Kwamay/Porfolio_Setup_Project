@@ -15,6 +15,7 @@
  - [Tech Stack](#tech-stack)
  - [Key Features](#key-features)
  - [🚀 Live Demo](#live-demo)
+ - [🚀 Project Presentation](#project-presentation)
  - [💻 Getting Started](#getting-started)
  - [Setup](#setup)
  - [Prerequisites](#prerequisites)
@@ -73,6 +74,14 @@
 - [Live Demo Link](https://kwamay.github.io/Porfolio_Setup_Project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presentation -->
+
+## 🚀 Project Presentation <a name="project-presentation"></a>
+
+> Feel free to watch the project presentation at [loom](https://www.loom.com/share/c1d279e9301446e980e06b7772a3ede9)
+
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
