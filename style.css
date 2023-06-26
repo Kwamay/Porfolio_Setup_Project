@@ -26,6 +26,7 @@ body {
   color: white;
   font-size: 40px;
 }
+
 .close > .material-symbols-outlined {
   font-size: 40px;
 }
@@ -444,12 +445,11 @@ input {
 
 .head-words {
   list-style-type: none;
-   
 }
 
 .links {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact-button {
@@ -484,13 +484,13 @@ input {
   padding-top: 20px;
   padding-left: 15px;
   position: fixed;
-  background-color: rgb(96,112,255,0.8);
+  background-color: rgb(96, 112, 255, 0.8);
   backdrop-filter: blur(5px);
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   z-index: 2;
 }
