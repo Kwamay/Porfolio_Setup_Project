@@ -490,5 +490,7 @@ input {
   height: 100vh;
   top: 0;
   left: 0;
+  text-decoration: none;
   color: #ffffff;
+  z-index: 2;
 }
