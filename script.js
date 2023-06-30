@@ -109,31 +109,28 @@ const desktopButtons = document.querySelectorAll('.see-project-desktop');
 desktopButtons.forEach((desktopButton, index) => {
   desktopButton.addEventListener('click', () => {
     // before show, set the modal details
-   const topic = document.querySelector('.Pop-up-topic')
-   topic.innerHTML = projectDetails[index].nameDesktop
-   
-   const image = document.querySelector('.pop-up-img')
-   image.src = projectDetails[index].featureImagePc
+    const topic = document.querySelector('.Pop-up-topic');
+    topic.innerHTML = projectDetails[index].nameDesktop;
 
-   const text = document.querySelector('.pop-up-text')
-   text.innerHTML = projectDetails[index].descriptionPC
+    const image = document.querySelector('.pop-up-img');
+    image.src = projectDetails[index].featureImagePc;
+
+    const text = document.querySelector('.pop-up-text');
+    text.innerHTML = projectDetails[index].descriptionPC;
     // show
     document.querySelector('.project-details-modal').classList.toggle('show');
-
   });
 });
 
 const closeModal = document.querySelector('.close-modal');
-closeModal.addEventListener('click', () =>
-  document.querySelector('.project-details-modal').classList.toggle('show')
-);
+closeModal.addEventListener('click', () => document.querySelector('.project-details-modal').classList.toggle('show'));
 
 // Form Validation
 const form = document.getElementById('myForm');
 const emailInput = document.getElementById('mail');
 const errorMessage = document.getElementById('errorMessage');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
 
   const emailValue = emailInput.value;
@@ -146,4 +143,3 @@ form.addEventListener('submit', function(event) {
     errorMessage.style.display = 'block';
   }
 });
-
