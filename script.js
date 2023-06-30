@@ -1,139 +1,156 @@
-const closeButton = document.querySelector('.close');
-closeButton.addEventListener('click', () => {
-  document.querySelector('.desktop').classList.toggle('show');
+const closeButton = document.querySelector(".close");
+closeButton.addEventListener("click", () => {
+  document.querySelector(".desktop").classList.toggle("show");
 });
 
-const navButton = document.querySelector('#nav-button');
-navButton.addEventListener('click', () => {
-  document.querySelector('.desktop').classList.toggle('show');
+const navButton = document.querySelector("#nav-button");
+navButton.addEventListener("click", () => {
+  document.querySelector(".desktop").classList.toggle("show");
 });
 
-const linkButtons = document.querySelectorAll('.links');
+const linkButtons = document.querySelectorAll(".links");
 linkButtons.forEach((linkButton) => {
-  linkButton.addEventListener('click', () => {
-    document.querySelector('.desktop').classList.toggle('show');
+  linkButton.addEventListener("click", () => {
+    document.querySelector(".desktop").classList.toggle("show");
   });
 });
 
 const projectDetails = [
   {
-    nameMobile: 'Tonic',
-    description:
-      'A daily selection of private personalized reads; no accounts or sign-ups required.',
-    featureImagePc: 'images/dektop-images/nature.png',
-    featureImageMb: 'images/2nd-phase/pic_on_screen.png',
-    technologiesMobile: ['HTML', 'CSS', 'JavaScript'],
-    technologiesDesktop: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    linkToLiveSection: '',
-    linkToSource: '',
-    nameDesktop: 'Tonic',
-    descriptionPC:
-      'A daily selection of private personalized reads; no accounts or sign-ups required.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
+    Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum han printer took a galley of type and scrambled it 
+    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    featureImage: "images/dektop-images/nature.png",
+    technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    linkToLiveSection: "https://kwamay.github.io/Porfolio_Setup_Project",
+    linkToSource: "https://github.com/Kwamay/Porfolio_Setup_Project",
+    name: "Tonic",
   },
 
   {
-    nameMobile: 'Multi-Post-Stories',
-    description:
-      'A daily selection of private personalized reads; no accounts or sign-ups required.',
-    descriptionPc:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    featureImagePc: 'images/dektop-images/art.png',
-    featureImageMb: 'images/2nd-phase/Avail.png',
-    technologiesMobile: ['HTML', 'CSS', 'JavaScript'],
-    technologiesDesktop: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    linkToLiveSection: '',
-    linkToSource: '',
-    nameDesktop: 'Multi-Post-Stories',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
+    Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum han printer took a galley of type and scrambled it 
+    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    featureImage: "images/dektop-images/art.png",
+    technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    linkToLiveSection: "https://kwamay.github.io/Porfolio_Setup_Project",
+    linkToSource: "https://github.com/Kwamay/Porfolio_Setup_Project",
+    name: "Multi-Post-Stories",
   },
 
   {
-    nameMobile: 'Tonic',
-    description:
-      'A daily selection of private personalized reads; no accounts or sign-ups required.',
-    descriptionPc:
-      'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.\', featureImagePc: \'images/dektop-images/display-pic.png',
-    featureImagePc: 'images/dektop-images/display-pic.png',
-    featureImageMb: 'images/2nd-phase/gym.png',
-    technologiesMobile: ['HTML', 'CSS', 'JavaScript'],
-    technologiesDesktop: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    linkToLiveSection: '',
-    linkToSource: '',
-    nameDesktop: 'Facebook 360',
+    description:`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
+    Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum han printer took a galley of type and scrambled it 
+    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    featureImage: "images/dektop-images/display-pic.png", //this is your feature image. it's for desktop
+    technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    linkToLiveSection: "https://kwamay.github.io/Porfolio_Setup_Project",
+    linkToSource: "https://github.com/Kwamay/Porfolio_Setup_Project",
+    name: "Facebook 360",
   },
 
   {
-    nameMobile: 'Multi-Post-Stories',
-    description:
-      'A daily selection of private personalized reads; no accounts or sign-ups required.',
-    descriptionPc:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    featureImagePc: 'images/dektop-images/avail.png',
-    featureImageMb: 'images/2nd-phase/art.png',
-    technologiesMobile: ['HTML', 'CSS', 'JavaScript'],
-    technologiesDesktop: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    linkToLiveSection: '',
-    linkToSource: '',
-    nameDesktop: 'Uber Navigation',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it 1960s.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
+    Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum han printer took a galley of type and scrambled it 
+    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    featureImage: "images/dektop-images/avail.png",
+    //featImage: "images/mobile-images/avail.png"
+    technologies: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    linkToLiveSection: "https://kwamay.github.io/Porfolio_Setup_Project",
+    linkToSource: "https://github.com/Kwamay/Porfolio_Setup_Project",
+    name: "Uber Navigation",
   },
 ];
+//here this is a clickProjectListener for your desktop version.
+const clickProjectListener = (index) => {
+  // before show, set the modal details
+  const topic = document.querySelector(".Pop-up-topic"); //
+  topic.innerHTML = projectDetails[index].name; 
 
-projectDetails.map((projectDetail, index) => {
-  const desktopImages = document.querySelectorAll('.desktop-image');
-  desktopImages[index].src = projectDetail.featureImagePc;
+  const image = document.querySelector(".pop-up-img");
+  //here you see the image is collected from projectDetails[index].featureImage. let's go to your featureImage
+  //as it is only for desktop it will mess your mobile pop up.
+  //my suggestion is add anoher feature image in your array of the objects. and put the value to your mobile image source link.
+  //After doing this for every elementst. you can call another clickProjectlistener function for your mobile.
+  image.src = projectDetails[index].featureImage; 
 
-  const mobileImages = document.querySelectorAll('.mobile-image');
-  mobileImages[index].src = projectDetail.featureImageMb;
+  const text = document.querySelector(".pop-up-text");
+  text.innerHTML = projectDetails[index].description;
 
-  const titleMobiles = document.querySelectorAll('.title-mobile');
-  titleMobiles[index].innerHTML = projectDetail.nameMobile;
+  // see live
+  const seeLive = document.querySelector(".see-live");
+  seeLive.addEventListener("click", () =>
+    window.open(projectDetails[index].linkToLiveSection, "_blank")
+  );
 
-  const titleDesktops = document.querySelectorAll('.title-desktop');
-  titleDesktops[index].innerHTML = projectDetail.nameDesktop;
+  const seeSource = document.querySelector(".see-source");
+  seeSource.addEventListener("click", () =>
+    window.open(projectDetails[index].linkToSource, "_blank")
+  );
 
-  const texts = document.querySelectorAll('.project-details');
-  texts[index].innerHTML = projectDetail.description;
-
-  const desktopTexts = document.querySelectorAll('.desktop-text');
-  desktopTexts[index].innerHTML = projectDetail.descriptionPc;
-
-  const desktopTechs = document.querySelectorAll('.desktop-lang');
-  projectDetail.technologiesDesktop.map((td) => {
-    const list = document.createElement('li');
+  // technologies
+  const techParent = document.querySelector(".pop-tech");
+  techParent.innerHTML = "";
+  projectDetails[index].technologies.map((td) => {
+    const list = document.createElement("li");
     list.textContent = td;
-    list.classList = 'desktop-lang-type';
-    desktopTechs[index].appendChild(list);
+    list.classList = "pop-up-tech-type";
+    techParent.appendChild(list);
   });
-});
+  // open modal
+  document.querySelector(".project-details-modal").classList.toggle("show");
+};
 
-const desktopButtons = document.querySelectorAll('.see-project-desktop');
+const desktopButtons = document.querySelectorAll(".see-project-desktop");
 desktopButtons.forEach((desktopButton, index) => {
-  desktopButton.addEventListener('click', () => {
-    // before show, set the modal details
-   const topic = document.querySelector('.Pop-up-topic')
-   topic.innerHTML = projectDetails[index].nameDesktop
-   
-   const image = document.querySelector('.pop-up-img')
-   image.src = projectDetails[index].featureImagePc
-
-   const text = document.querySelector('.pop-up-text')
-   text.innerHTML = projectDetails[index].descriptionPC
-    // show
-    document.querySelector('.project-details-modal').classList.toggle('show');
-
-  });
+  desktopButton.addEventListener("click", () => clickProjectListener(index));
 });
 
-const closeModal = document.querySelector('.close-modal');
-closeModal.addEventListener('click', () =>
-  document.querySelector('.project-details-modal').classList.toggle('show')
+// const mobileSeeProjectButtons = document.querySelectorAll(
+//   ".see-project-mobile"
+// );
+// mobileSeeProjectButtons.forEach((mobileSeeProjectButton, index) => {
+//   mobileSeeProjectButton.addEventListener("click", () =>
+//     clickProjectListener(index)
+//   );
+// });
+
+// close modal
+const closeModal = document.querySelector(".close-modal");
+closeModal.addEventListener("click", () =>
+  document.querySelector(".project-details-modal").classList.toggle("show")
 );
 
 // Form Validation
-const form = document.getElementById('myForm');
-const emailInput = document.getElementById('mail');
-const errorMessage = document.getElementById('errorMessage');
+const form = document.getElementById("myForm");
+const emailInput = document.getElementById("mail");
+const errorMessage = document.getElementById("errorMessage");
 
-form.addEventListener('submit', function(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent form submission
 
   const emailValue = emailInput.value;
@@ -142,8 +159,7 @@ form.addEventListener('submit', function(event) {
     form.submit();
   } else {
     // Email is not in lowercase, display error message
-    errorMessage.textContent = 'Email must be in lowercase.';
-    errorMessage.style.display = 'block';
+    errorMessage.textContent = "Email must be in lowercase.";
+    errorMessage.style.display = "block";
   }
 });
-

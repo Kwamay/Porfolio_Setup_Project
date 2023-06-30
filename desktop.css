@@ -31,6 +31,10 @@
     align-self: flex-end;
   }
 
+  .links {
+    color: #091e42;
+  }
+
   .head-words {
     margin-right: 32px;
     font-size: 15px;
@@ -428,4 +432,5 @@
   .desktop {
     display: block;
   }
+  
 }
