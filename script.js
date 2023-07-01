@@ -16,12 +16,12 @@ linkButtons.forEach((linkButton) => {
 });
 
 // reading from localstorage
-const object = localStorage.getItem("formDetails");
-const formName = document.getElementById("name");
+const object = localStorage.getItem('formDetails');
+const formName = document.getElementById('name');
 formName.value = JSON.parse(object).name;
-const email = document.getElementById("mail");
+const email = document.getElementById('mail');
 email.value = JSON.parse(object).email;
-const message = document.getElementById("message");
+const message = document.getElementById('message');
 message.value = JSON.parse(object).message;
 
 const projectDetails = [
