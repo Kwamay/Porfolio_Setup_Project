@@ -127,6 +127,6 @@ form.addEventListener('submit', (event) => {
   } else {
     // Email is not in lowercase, display error message
     errorMessage.textContent = 'Email must be in lowercase.';
-    errorMessage.style.display = "block";
+    errorMessage.style.display = 'block';
   }
 });
