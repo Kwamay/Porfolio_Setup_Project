@@ -504,6 +504,7 @@ input {
   justify-content: center;
   align-items: center;
   position: fixed;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(96, 112, 255, 0.2);
   backdrop-filter: blur(5px);
   min-width: 100%;
@@ -511,7 +512,6 @@ input {
   top: 0;
   left: 0;
   text-decoration: none;
-  color: black;
   z-index: 2;
 }
 
@@ -526,8 +526,13 @@ input {
 }
 
 .pop-up-topic {
-  font-size: 80px;
-  font-weight: 200;
+  font-size: 200px;
+  font-weight: 500;
+}
+
+.pop-mobile-text {
+  color: #344563;
+  line-height: 24px;
 }
 
 .pop-up-list {
@@ -657,7 +662,8 @@ input {
   top: 0;
   left: 0;
   text-decoration: none;
-  color: black;
+
+  /* color: black; */
   z-index: 2;
 }
 
