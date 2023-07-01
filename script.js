@@ -15,17 +15,20 @@ linkButtons.forEach((linkButton) => {
   });
 });
 
+// reading from localstorage
+// const object = localStorage.getItem("formDetails");
+// const formName = document.getElementById("name");
+// formName.value = JSON.parse(object).name;
+// const email = document.getElementById("mail");
+// email.value = JSON.parse(object).email;
+// const message = document.getElementById("message");
+// message.value = JSON.parse(object).message;
+
 const projectDetails = [
   {
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
-    Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum han printer took a galley of type and scrambled it 
-    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br/> 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.`,
     featureImage: 'images/dektop-images/nature.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     linkToLiveSection: 'https://kwamay.github.io/Porfolio_Setup_Project',
@@ -35,14 +38,8 @@ const projectDetails = [
 
   {
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
-    Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum han printer took a galley of type and scrambled it 
-    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <br/>  
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.`,
     featureImage: 'images/dektop-images/art.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     linkToLiveSection: 'https://kwamay.github.io/Porfolio_Setup_Project',
@@ -52,15 +49,9 @@ const projectDetails = [
 
   {
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
-    Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum han printer took a galley of type and scrambled it 
-    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    featureImage: 'images/dektop-images/display-pic.png', // this is your feature image. it's for desktop
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <br/> 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. `,
+    featureImage: 'images/dektop-images/display-pic.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     linkToLiveSection: 'https://kwamay.github.io/Porfolio_Setup_Project',
     linkToSource: 'https://github.com/Kwamay/Porfolio_Setup_Project',
@@ -69,16 +60,9 @@ const projectDetails = [
 
   {
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> <br/>
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the releorem 
-    Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum han printer took a galley of type and scrambled it 
-    1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <br/> 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. `,
     featureImage: 'images/dektop-images/avail.png',
-    // featImage: "images/mobile-images/avail.png"
     technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
     linkToLiveSection: 'https://kwamay.github.io/Porfolio_Setup_Project',
     linkToSource: 'https://github.com/Kwamay/Porfolio_Setup_Project',
@@ -88,7 +72,7 @@ const projectDetails = [
 // here this is a clickProjectListener for your desktop version.
 const clickProjectListener = (index) => {
   // before show, set the modal details
-  const topic = document.querySelector('.Pop-up-topic'); //
+  const topic = document.querySelector('.pop-up-topic'); //
   topic.innerHTML = projectDetails[index].name;
 
   const image = document.querySelector('.pop-up-img');
@@ -123,20 +107,26 @@ const closeModal = document.querySelector('.close-modal');
 closeModal.addEventListener('click', () => document.querySelector('.project-details-modal').classList.toggle('show'));
 
 // Form Validation
-const form = document.getElementById('myForm');
-const emailInput = document.getElementById('mail');
-const errorMessage = document.getElementById('errorMessage');
+// const form = document.getElementById("myForm");
+// const emailInput = document.getElementById("mail");
+// const errorMessage = document.getElementById("errorMessage");
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent form submission
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault(); // Prevent form submission
 
-  const emailValue = emailInput.value;
-  if (emailValue.toLowerCase() === emailValue) {
-    // Email is already in lowercase, form submission is allowed
-    form.submit();
-  } else {
-    // Email is not in lowercase, display error message
-    errorMessage.textContent = 'Email must be in lowercase.';
-    errorMessage.style.display = 'block';
-  }
-});
+//   const emailValue = emailInput.value;
+//   if (emailValue.toLowerCase() === emailValue) {
+//     // Email is already in lowercase, form submission is allowed
+//     const object = {
+//       name: document.getElementById("name").value,
+//       email: emailValue,
+//       message: document.getElementById("message").value,
+//     };
+//     localStorage.setItem("formDetails", JSON.stringify(object));
+//     form.submit();
+//   } else {
+//     // Email is not in lowercase, display error message
+//     errorMessage.textContent = "Email must be in lowercase.";
+//     errorMessage.style.display = "block";
+//   }
+// });

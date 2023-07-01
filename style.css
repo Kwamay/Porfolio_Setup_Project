@@ -504,7 +504,7 @@ input {
   justify-content: center;
   align-items: center;
   position: fixed;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(96, 112, 255, 0.2);
   backdrop-filter: blur(5px);
   min-width: 100%;
@@ -518,19 +518,22 @@ input {
 .modal-content {
   background-color: #fff;
   border-radius: 10px;
-  width: 50%;
-  height: 80%;
-  margin-bottom: 100px;
-  padding: 1rem 1rem 3rem 1rem;
-  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  margin: 30px 20%;
+  padding: 20px;
 }
 
 .pop-up-topic {
-  font-size: 200px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #091e42;
 }
 
 .pop-mobile-text {
+  font-size: 15px;
+  font-weight: 400;
   color: #344563;
   line-height: 24px;
 }
@@ -549,23 +552,24 @@ input {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding-bottom: 8px;
 }
 
 .pop-up-details-container {
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 5px;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-top: 2rem;
+  margin-top: 28px;
 }
 
 .pop-up-text {
-  flex: 2;
-  flex-wrap: nowrap;
-  font-size: 9px;
-  gap: 2rem;
-  line-height: 14px;
+  flex: 1;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 25px;
 }
 
 .pop-tech {
@@ -573,10 +577,11 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  gap: 8px;
 }
 
 .pop-up-tech {
-  flex: 1;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -592,27 +597,48 @@ input {
   justify-content: flex-start;
   align-items: center;
   gap: 24px;
-  font-size: 16px;
+
+  /* font-size: 16px; */
+  padding-bottom: 28px;
 }
 
-.canopy-pc {
+.pc-pop-canopy {
   list-style-type: none;
-  color: black;
-  font-size: 16px;
+  color: #344563;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.pc-pop-back-end {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #7a869a;
+}
+
+.pc-pop-year {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #7a869a;
 }
 
 .pop-up-tech-type {
-  background-color: #ebebff;
+  color: #6070ff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.36px;
   padding: 4px 12px;
+  background-color: #ebebff;
   border-radius: 8px;
-  margin: 4px 4px 0;
-  font-size: 12px;
 }
 
 .pop-up-button {
   display: flex;
   width: 100%;
-  gap: 1rem;
+  gap: 5px;
   margin-top: 2rem;
 }
 
@@ -620,30 +646,34 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 8px;
+  font-weight: 400;
   gap: 5px;
-  padding: 6px 6px;
+  line-height: 20px;
+  padding: 8px;
   color: #6070ff;
   background-color: #fff;
   border: 1px solid #6070ff;
-  border-radius: 8px;
+  border-radius: 6px;
   font-family: "Poppins", sans-serif;
-  width: max-content;
+  white-space: nowrap;
 }
 
 .pop-button-source {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 8px;
+  font-weight: 400;
   gap: 5px;
-  padding: 6px 6px;
+  line-height: 20px;
+  padding: 6px;
   color: #6070ff;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  width: max-content;
+  white-space: nowrap;
 }
 
 .mobile-project-modal {
@@ -662,18 +692,16 @@ input {
   top: 0;
   left: 0;
   text-decoration: none;
-
-  /* color: black; */
   z-index: 2;
 }
 
 .mobile-modal-content {
   background-color: #fff;
   border-radius: 10px;
-  width: 90%;
-  height: 80%;
-  padding: 1rem 1rem 3rem 1rem;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  margin: 16px;
 }
 
 .mobile-modal-header {
@@ -683,8 +711,9 @@ input {
 }
 
 .pop-mobile-topic {
-  font-size: 300px;
-  font-weight: 200;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
 }
 
 .pop-mobile-items {
@@ -696,18 +725,32 @@ input {
 }
 
 .mobile-canopy {
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
   list-style-type: none;
+}
+
+#mobile-popup-img {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  margin: 12px 0;
 }
 
 .mobile-back-end {
   color: #7a869a;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 .mobile-year {
   color: #7a869a;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 .pop-mobile-tech {
@@ -719,6 +762,7 @@ input {
   margin-top: 12px;
   font-size: 100px;
   font-weight: 400;
+  gap: 8px;
 }
 
 .see-live {
@@ -734,6 +778,7 @@ input {
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   width: 50%;
+  white-space: nowrap;
 }
 
 .see-source {
@@ -741,6 +786,7 @@ input {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  white-space: nowrap;
   gap: 5px;
   padding: 6px 6px;
   color: #6070ff;
