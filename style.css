@@ -626,9 +626,9 @@ input {
 
 .pop-up-tech-type {
   color: #6070ff;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
   letter-spacing: 0.36px;
   padding: 4px 12px;
   background-color: #ebebff;
@@ -638,8 +638,8 @@ input {
 .pop-up-button {
   display: flex;
   width: 100%;
-  gap: 12px;
-  margin-top: 25px;
+  gap: 5px;
+  margin-top: 2rem;
 }
 
 .pop-button {
@@ -687,22 +687,22 @@ input {
   position: fixed;
   background-color: rgb(96, 112, 255, 0.2);
   backdrop-filter: blur(5px);
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   top: 0;
   left: 0;
   text-decoration: none;
   z-index: 2;
-  padding: 16px;
 }
 
 .mobile-modal-content {
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 10px;
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
+  height: 100vh;
   padding: 16px;
+  margin: 16px;
+  overflow-y: scroll;
 }
 
 .mobile-modal-header {
@@ -722,7 +722,6 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   gap: 24px;
-  margin-top: 14px;
   font-size: 16px;
 }
 
@@ -764,7 +763,7 @@ input {
   margin-top: 12px;
   font-size: 100px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 2px solid #ebecf0;
   font-weight: 400;
   gap: 8px;
 }
@@ -775,10 +774,10 @@ input {
   justify-content: center;
   font-size: 15px;
   gap: 10px;
-  padding: 14px 22px;
-  color: #396df2;
+  padding: 12px 22px;
+  color: #6070ff;
   background-color: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   white-space: nowrap;
@@ -790,15 +789,16 @@ input {
   justify-content: center;
   font-size: 15px;
   gap: 10px;
-  padding: 14px 22px;
-  color: #396df2;
+  padding: 12px 22px;
+  color: #6070ff;
   background-color: #fff;
-  border: 1px solid #396df2;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  white-space: nowrap;}
+  white-space: nowrap;
+}
 
-#errorMessage {
-  color:red;
+#errorMesage {
+  color: red;
   display: none;
 }
